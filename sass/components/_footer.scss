@@ -1,0 +1,113 @@
+.footer {
+  padding-top: 66px;
+  padding-bottom: 54px;
+  background-color: $background-hero;
+}
+.footer__logo {
+  display: inline-block;
+  color: $primary-color;
+}
+.city {
+  font-style: normal;
+  line-height: 1.7;
+  color: $primary_color;
+}
+.footer__item:not(:first-child) {
+  margin-top: 10px;
+}
+.footer__link {
+  font-style: normal;
+  line-height: 1.7;
+  color: $color-contact;
+}
+.footer__title {
+  color: $primary_color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer__adress {
+  margin-top: 20px;
+}
+.footer__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.footer__box:nth-child(n + 2) {
+  margin-left: 70px;
+}
+.footer__box:last-child {
+  margin-left: auto;
+}
+.footer__social-box {
+  padding: 0;
+}
+.footer__soc-item:not(:first-child) {
+  margin-left: 10px;
+}
+.footer__soc-link {
+  background-color: $footer-soc-background;
+}
+.footer__social-icon {
+  fill: $primary-color;
+}
+.footer-form__email {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  width: 358px;
+  height: 50px;
+
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+
+  color: $primary-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $background-hero;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+.footer-form__email::placeholder {
+  color: $placeholder-color;
+}
+.footer-form__submit {
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 29px;
+  padding-right: 28px;
+  margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $primary-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.footer-form__submit--icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
