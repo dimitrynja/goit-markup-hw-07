@@ -55,3 +55,33 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $color-soc-links;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $soc-links-hover;
+  }
+}
+.social-list__social-icon:not(:first-child) {
+  margin-left: 10px;
+}
+.social-list__social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

@@ -8,11 +8,11 @@
 .clients__item {
   flex-basis: calc((100% - 150px) / 6);
   min-height: 92px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
-.clients__item:not(:first-child) {
-  margin-left: 30px;
-}
-.clients__icon-link {
+.clients__item .clients__icon-link {
   display: flex;
   justify-content: center;
   align-items: center;

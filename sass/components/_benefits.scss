@@ -7,9 +7,9 @@
 }
 .benefits__item {
   flex-basis: calc((100% - 90px) / 4);
-}
-.benefits__item:not(:first-child) {
-  margin-left: 30px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 .benefits__icon-box {
   display: flex;
